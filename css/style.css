@@ -33,7 +33,7 @@ html { font-size: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; -
 
 body { margin: 0; font-size: 16px; line-height: 1.5; }
 
-body, button, input, select, textarea { font-family: "Open sans", sans-serif; color: #222; }
+body, button, input, select, textarea { font-family: "Open Sans", sans-serif; color: #222; }
 
 /* 
  * These selection declarations have to be separate
@@ -204,13 +204,13 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 body {
       background: #0C0000;
-      text-align: center;
 }
 header {
   padding-bottom: 20px;
 }
 h1 {
-  margin: 0;
+  text-align: center;
+  margin: 0px;
   font-size: 6em;
   color: #c0c0c0;
   font-family: "Yanone Kaffeesatz", sans-serif;
@@ -218,7 +218,7 @@ h1 {
 }
 .nav {
   padding:0;
-  margin: 0 auto;
+  margin: -20px auto 30px auto;
   width: 300px;
   list-style: none;
   text-transform: uppercase;
@@ -226,8 +226,11 @@ h1 {
 .nav li:last-child a {
   margin-right: 0;
 }
+.nav li:first-child a {
+  margin-left: 10px;
+}
 .nav li a {
-  margin-right: 1px;
+  margin-right: 5px;
   float: left;
   letter-spacing: -1px;
   font-family: Gudea, sans-serif;
@@ -251,7 +254,13 @@ footer {
   background: url(../cloud-gray.png) no-repeat right;
 }
 #main {
-
+  background: #FEFEF2;
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  font-size: 0.9em;
+  box-shadow: inset  1px  1px 5px #000,
+              inset -1px -1px 5px #000;
 }
 
 
