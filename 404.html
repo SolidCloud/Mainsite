@@ -1,38 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Page Not Found :(</title>
+  <title>Sidan hittades inte!</title>
   <style>
-	  body { text-align: center;}
-	  h1 { font-size: 50px; text-align: center }
-	  span[frown] { transform: rotate(90deg); display:inline-block; color: #bbb; }
-	  body { font: 20px Constantia, 'Hoefler Text',  "Adobe Caslon Pro", Baskerville, Georgia, Times, serif; color: #999; text-shadow: 2px 2px 2px rgba(200, 200, 200, 0.5); }
+	  body { text-align: center; background: #0C0000; font-family: "Gudea", sans-serif;}
+	  h1 { font-size: 50px; text-align: center; color: #c0c0c0; }
 	  ::-moz-selection{ background:#FF5E99; color:#fff; }
-	  ::selection { background:#FF5E99; color:#fff; } 
-	  article {display:block; text-align: left; width: 500px; margin: 0 auto; }
-	  
-	  a { color: rgb(36, 109, 56); text-decoration:none; }
-	  a:hover { color: rgb(96, 73, 141) ; text-shadow: 2px 2px 2px rgba(36, 109, 56, 0.5); }
+	  ::selection { background:#FF5E99; color:#fff; }
+	  #img {
+	  	margin: 10px auto;
+	  	height: 450px;
+	  	background: url(tb_sign1.png) no-repeat center top;
+	  	background-size: contain;
+	  }
+	  a {
+	  	padding: 2px 5px;
+	  	color: #FFD526;
+	  	text-decoration: none;
+	  }
+	  a:hover {
+	  	color: #0C0000;
+	  	background: #FFD526;
+	  }
+	  .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+	  .ir br { display: none; }
   </style>
+  <link href="http://fonts.googleapis.com/css?family=Gudea" rel="stylesheet" type="text/css">
 </head>
 <body>
-     <article>
-	  <h1>Not found <span frown>:(</span></h1>
-	   <div>
-	       <p>Sorry, but the page you were trying to view does not exist.</p>
-	       <p>It looks like this was the result of either:</p>
-	       <ul>
-		   <li>a mistyped address</li>
-		   <li>an out-of-date link</li>
-	       </ul>
-	   </div>
-	    
-	    <script>
-	    var GOOG_FIXURL_LANG = (navigator.language || '').slice(0,2),
-		GOOG_FIXURL_SITE = location.host;
-	    </script>
-	    <script src="http://linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js"></script>
-     </article>
+     <div id="main">
+	  <h1>Sidan hittades inte!</h1>
+	   <div id="img" class="ir"></div>
+	   <!-- Image credit to TheOatmeal.com -->
+	   <a href="/">Tillbaka till startsidan!</a>
+     </div>
 </body>
 </html>

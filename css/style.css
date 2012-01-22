@@ -233,9 +233,9 @@ h1 {
   margin-right: 5px;
   float: left;
   letter-spacing: -1px;
-  font-family: Gudea, sans-serif;
+  font-family: "Gudea", sans-serif;
   font-weight: bold;
-  padding: 2px 5px 2px 5px;
+  padding: 2px 5px;
   display: inline;
   color: #FFD526;
   text-decoration: none;
